@@ -1,0 +1,131 @@
+menu.softdevice=SoftDevice
+menu.debug=Debug Level
+menu.debug_output=Debug Port
+
+# -----------------------------------
+# Brainiac Big
+# -----------------------------------
+brainiac_big.name=Brainiac Big
+
+# VID/PID for Bootloader, Arduino & CircuitPython
+brainiac_big.vid.0=0x239A
+brainiac_big.pid.0=0x8029
+brainiac_big.vid.1=0x239A
+brainiac_big.pid.1=0x0029
+brainiac_big.vid.2=0x239A
+brainiac_big.pid.2=0x002A
+brainiac_big.vid.3=0x239A
+brainiac_big.pid.3=0x802A
+
+# Upload
+brainiac_big.bootloader.tool=bootburn
+brainiac_big.upload.tool=nrfutil
+brainiac_big.upload.protocol=nrfutil
+brainiac_big.upload.use_1200bps_touch=true
+brainiac_big.upload.wait_for_upload_port=true
+brainiac_big.upload.maximum_size=815104
+brainiac_big.upload.maximum_data_size=237568
+
+# Build
+brainiac_big.build.mcu=cortex-m4
+brainiac_big.build.f_cpu=64000000
+brainiac_big.build.board=BRAINIAC_BIG
+brainiac_big.build.core=nRF5
+brainiac_big.build.variant=brainiac_big
+brainiac_big.build.usb_manufacturer="UKallavi"
+brainiac_big.build.usb_product="Brainiac Big"
+brainiac_big.build.extra_flags=-DNRF52840_XXAA {build.flags.usb}
+brainiac_big.build.ldscript=nrf52840_s140_v6.ld
+brainiac_big.build.openocdscript=scripts/openocd/daplink_nrf52.cfg
+brainiac_big.build.vid=0x239A
+brainiac_big.build.pid=0x8029
+brainiac_big.build.uf2_family=0xADA52840
+
+# Menu: SoftDevice
+brainiac_big.menu.softdevice.s140v6=S140 6.1.1
+brainiac_big.menu.softdevice.s140v6.build.sd_name=s140
+brainiac_big.menu.softdevice.s140v6.build.sd_version=6.1.1
+brainiac_big.menu.softdevice.s140v6.build.sd_fwid=0x00B6
+
+# Menu: Debug Level
+brainiac_big.menu.debug.l0=Level 0 (Release)
+brainiac_big.menu.debug.l0.build.debug_flags=-DCFG_DEBUG=0
+brainiac_big.menu.debug.l1=Level 1 (Error Message)
+brainiac_big.menu.debug.l1.build.debug_flags=-DCFG_DEBUG=1
+brainiac_big.menu.debug.l2=Level 2 (Full Debug)
+brainiac_big.menu.debug.l2.build.debug_flags=-DCFG_DEBUG=2
+brainiac_big.menu.debug.l3=Level 3 (Segger SystemView)
+brainiac_big.menu.debug.l3.build.debug_flags=-DCFG_DEBUG=3
+brainiac_big.menu.debug.l3.build.sysview_flags=-DCFG_SYSVIEW=1
+
+# Menu: Debug Port
+brainiac_big.menu.debug_output.serial=Serial
+brainiac_big.menu.debug_output.serial.build.logger_flags=-DCFG_LOGGER=0
+brainiac_big.menu.debug_output.serial1=Serial1
+brainiac_big.menu.debug_output.serial1.build.logger_flags=-DCFG_LOGGER=1 -DCFG_TUSB_DEBUG=CFG_DEBUG
+brainiac_big.menu.debug_output.rtt=Segger RTT
+brainiac_big.menu.debug_output.rtt.build.logger_flags=-DCFG_LOGGER=2 -DCFG_TUSB_DEBUG=CFG_DEBUG -DSEGGER_RTT_MODE_DEFAULT=SEGGER_RTT_MODE_BLOCK_IF_FIFO_FULL
+
+# -----------------------------------
+# Brainiac Micro
+# -----------------------------------
+brainiac_micro.name=Brainiac Micro
+
+# VID/PID for Bootloader, Arduino & CircuitPython
+brainiac_micro.vid.0=0x239A
+brainiac_micro.pid.0=0x8029
+brainiac_micro.vid.1=0x239A
+brainiac_micro.pid.1=0x0029
+brainiac_micro.vid.2=0x239A
+brainiac_micro.pid.2=0x002A
+brainiac_micro.vid.3=0x239A
+brainiac_micro.pid.3=0x802A
+
+# Upload
+brainiac_micro.bootloader.tool=bootburn
+brainiac_micro.upload.tool=nrfutil
+brainiac_micro.upload.protocol=nrfutil
+brainiac_micro.upload.use_1200bps_touch=true
+brainiac_micro.upload.wait_for_upload_port=true
+brainiac_micro.upload.maximum_size=815104
+brainiac_micro.upload.maximum_data_size=237568
+
+# Build
+brainiac_micro.build.mcu=cortex-m4
+brainiac_micro.build.f_cpu=64000000
+brainiac_micro.build.board=BRAINIAC_MICRO
+brainiac_micro.build.core=nRF5
+brainiac_micro.build.variant=brainiac_micro
+brainiac_micro.build.usb_manufacturer="UKallavi"
+brainiac_micro.build.usb_product="Brainiac Micro"
+brainiac_micro.build.extra_flags=-DNRF52840_XXAA {build.flags.usb}
+brainiac_micro.build.ldscript=nrf52840_s140_v6.ld
+brainiac_micro.build.openocdscript=scripts/openocd/daplink_nrf52.cfg
+brainiac_micro.build.vid=0x239A
+brainiac_micro.build.pid=0x8029
+brainiac_micro.build.uf2_family=0xADA52840
+
+# Menu: SoftDevice
+brainiac_micro.menu.softdevice.s140v6=S140 6.1.1
+brainiac_micro.menu.softdevice.s140v6.build.sd_name=s140
+brainiac_micro.menu.softdevice.s140v6.build.sd_version=6.1.1
+brainiac_micro.menu.softdevice.s140v6.build.sd_fwid=0x00B6
+
+# Menu: Debug Level
+brainiac_micro.menu.debug.l0=Level 0 (Release)
+brainiac_micro.menu.debug.l0.build.debug_flags=-DCFG_DEBUG=0
+brainiac_micro.menu.debug.l1=Level 1 (Error Message)
+brainiac_micro.menu.debug.l1.build.debug_flags=-DCFG_DEBUG=1
+brainiac_micro.menu.debug.l2=Level 2 (Full Debug)
+brainiac_micro.menu.debug.l2.build.debug_flags=-DCFG_DEBUG=2
+brainiac_micro.menu.debug.l3=Level 3 (Segger SystemView)
+brainiac_micro.menu.debug.l3.build.debug_flags=-DCFG_DEBUG=3
+brainiac_micro.menu.debug.l3.build.sysview_flags=-DCFG_SYSVIEW=1
+
+# Menu: Debug Port
+brainiac_micro.menu.debug_output.serial=Serial
+brainiac_micro.menu.debug_output.serial.build.logger_flags=-DCFG_LOGGER=0
+brainiac_micro.menu.debug_output.serial1=Serial1
+brainiac_micro.menu.debug_output.serial1.build.logger_flags=-DCFG_LOGGER=1 -DCFG_TUSB_DEBUG=CFG_DEBUG
+brainiac_micro.menu.debug_output.rtt=Segger RTT
+brainiac_micro.menu.debug_output.rtt.build.logger_flags=-DCFG_LOGGER=2 -DCFG_TUSB_DEBUG=CFG_DEBUG -DSEGGER_RTT_MODE_DEFAULT=SEGGER_RTT_MODE_BLOCK_IF_FIFO_FULL
